@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="/bower_components/ember/ember.js"></script>
+
+    <script type="text/x-handlebars">
+    <h1>Welcome to a sample Ember Application</h1>
+    {{outlet}}
+    </script>
+
+    <script type="text/x-handlebars" id="index">
+    Hello, {{first}} {{last}}!
+    {{#link-to 'page'}}link to different page{{/link-to}}
+    {{#link-to 'badRoute'}}link to a bad route{{/link-to}}
+    </script>
+
+    <script type="text/x-handlebars" id="page">
+    Welcome to /page
+    </script>
+
+    <script type="text/x-handlebars" id="badRoute">
+    If you are seeing this, you arrived here via <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history">pushState</a>.  Try hitting reload!
+    </script>
+
+    <script src="/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "serverside-routing-and-clientside-routing",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A sample project to show how server side routing and client side routing work together.",
+  "author": {
+    "name": "Tyler Kellen",
+    "url": "http://goingslowly.com/"
+  },
+  "scripts": {
+    "start": "node server",
+    "install": "bower install"
+  },
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "express": "^4.9.5",
+    "morgan": "^1.4.1",
+    "serve-favicon": "^2.1.6"
+  }
+}
