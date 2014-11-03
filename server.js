@@ -25,7 +25,8 @@ app.use(express.static('./public'));
 
 // catch-all.  if no previous SERVER routes matched serve index.html
 app.use(function(req, res) {
-  res.sendfile('./public/index.html');
+  console.log('serving index.html!');
+  res.sendFile(__dirname+'/public/index.html');
 });
 
 console.log('Server running on, %s:%d', host, port);
